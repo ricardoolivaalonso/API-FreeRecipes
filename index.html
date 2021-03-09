@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Montserrat&display=swap">
+</head>
+<body>
+
+    <h1>GET YOUR RECIPES</h1>
+    <div class="container">
+        <form id="form" class="form">
+            <input type="text" id="form-input" class="form__input" placeholder="Search recipes, ingredientes">
+            <button type="submit" id="form-submit" class="form__submit"></button>
+        </form>
+
+        <main class="main">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <span class="menu__title">INGREDIENTS</span>
+                    <li class="menu__item"><a class="menu__link" data-ig="chicken">Chicken</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="egg">Egg</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="potatoes">Potatoes</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="fish">Fish</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="onion">Onion</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="cheese">Cheese</a></li>
+                    <li class="menu__item"><a class="menu__link" data-ig="butter">Butter</a></li>
+                </ul>
+            </nav>
+            <div id="tag-error" class="tag-error is-element-hidden">No hay ningún resultado</div>
+            <section id="cards" class="cards"></section>
+        </main>
+    </div>
+
+    <template id="template">
+        <article class="card__item">
+            <img class="card__thumb"/>
+            <div class="card__info">
+                <h2 class="card__title"></h2>
+                <div class="card__instructions"></div>
+                <div class="card__ingredients">
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                    <span class="card__ingredient"></span>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+</html>
